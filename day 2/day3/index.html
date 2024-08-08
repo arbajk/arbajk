@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <link rel="stylesheet" href="css/styles.css">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    section{
+        display: flex;
+        justify-content:center ;
+        height: 600px;
+        align-items: center;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        border: 10px solid black;
+        border-color: red greenyellow black brown;
+        border-radius: 50%;
+        animation-name: rounded;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes rounded{
+       0%{
+             transform: rotate(0deg);
+       }
+       25%{
+            transform: rotate(90deg);
+       }
+       50%{
+           transform: rotate(180deg);
+       }
+       75%{ 
+        transform: rotate(270deg);
+
+       }
+       100%{
+           transform: rotate(360deg);
+       }
+    }
+</style>
+</head>
+<body>
+    <section>
+      <div></div>
+      </section>
+</body>
+</html>
