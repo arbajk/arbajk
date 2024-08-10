@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        div{
+            background-color: red;
+            width: 420px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        @media (max-width:715px) {
+            div{
+                background-color: green;
+                height: 200px;
+                width: 49%;
+            }
+        }
+        @media (max-width:380px) {
+            div{
+                background-color: orange;
+                width: 99%;
+                height: 200px;
+                border-radius: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+</body>
+</html>
